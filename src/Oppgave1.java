@@ -3,7 +3,9 @@
 public class Oppgave1 {
 	
 
-	
+	//Del 2 
+	//Oppgave 1.a)
+	//Vi ser at ved bruk av den nye while løkken er det en liten forskjell i kjøretiden til de ulike metodene.
 	
 	public static <T extends Comparable<? super T>> void sorterVedInnsetting1(T[] a) {
 		sorterVedInnsetting1(a, 0, a.length - 1);
@@ -58,7 +60,7 @@ public class Oppgave1 {
 	   
 		
 		for (int i = forste; i < siste; i += 2) {
-	        // Sjekk om vi har to elementer å jobbe med; hvis ikke, sorter det siste elementet som vanlig
+	        // Forsikrer at koden fungerer selv om vi har partall eller oddetall
 	        if (i + 1 > siste) {
 	            sorterEttElement(a, i, i);
 	            break;
@@ -81,7 +83,7 @@ public class Oppgave1 {
 	        }
 	        a[j - 1] = storste;
 
-	        // Deretter, sett inn det minste elementet
+	       
 	        j = i;
 	        while (j < siste && a[j].compareTo(minste) < 0) {
 	            a[j] = a[j + 1];
@@ -104,6 +106,8 @@ public class Oppgave1 {
 	public static <T extends Comparable<? super T>> void sorterVedInnsettingForTo(T[] a) {
 		sorterVedInnsetting2(a, 0, a.length - 1);
 	}
+	
+	//Oppgave 1.c)
 	
 	
 public static <T extends Comparable<? super T>> void sorterVedInnsettingForSisteGang(T[] a, int forste, int siste) {

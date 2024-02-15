@@ -18,13 +18,13 @@ public class Main {
 			tabell[x]= 5;
 		}
         
-Integer[] tabell1 = new Integer[64000];
+        Integer[] tabell1 = new Integer[64000];
         
         for (int x = 0; x < tabell1.length; x++) {
 			tabell1[x]= 5;
 		}
         
-Integer[] tabell2 = new Integer[128000];
+        Integer[] tabell2 = new Integer[128000];
         
         for (int x = 0; x < tabell2.length; x++) {
 			tabell2[x]= 5;
